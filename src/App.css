@@ -1,12 +1,44 @@
+:root{
+  --blue: #2B3E86;
+
+   --box-shadow-inset-blue: .4rem .4rem 1rem #355cb8 inset,
+                -.4rem -.4rem 1rem rgb(98, 119, 200) inset;
+    --bt-shadow:.5rem .5rem .2rem #243167,
+                -.3rem -.3rem .2rem #455f9a;
+    --bt-shadow-inset: .4rem .4rem 1rem #243167 inset,
+                -.4rem -.4rem 1rem #455f9a inset;
+}
+
 .App {
   text-align: center;
+  /* background: #2B3E86; */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.Opt{
+   font-size: 1.1rem;
+   margin: 2.0rem 0;
+   padding: .7rem;
+   border-radius: 5rem;
+   display: block;
+   color: var(--blue);
+   background-color: #fff;
+   font-family: sans-serif;
+   font-weight: 800;
+   
+}
 
+.Opt:hover{
+  color: white;
+  background: var(--blue);
+  box-shadow: var(--bt-shadow-inset);
+  border-right: .6px solid black;
+  border-bottom: .2px solid black;
+  border-top: .05px solid whitesmoke;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +46,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #444;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +67,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button{
+  width: 20vh;
+  height: 40px;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: #fff;
+  box-shadow: var(--bt-shadow);
+  background: var(--blue);
+}
+button:hover{
+  cursor: pointer;
+  color: white;
+  box-shadow: var(--bt-shadow-inset);
+}
+.callBtn{
+  width: 20vh;
+  height: 40px;
+  padding: 8px;
+  text-decoration: none;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: #fff;
+  box-shadow: var(--bt-shadow);
+  background: var(--blue);
+}
+.callBtn:hover{
+  cursor: pointer;
+  color: white;
+  box-shadow: var(--bt-shadow-inset);
 }

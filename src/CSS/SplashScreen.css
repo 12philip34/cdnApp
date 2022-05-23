@@ -1,0 +1,10 @@
+img{
+  width: 300px;
+}
+  h1{
+    color: #17224a;
+    text-shadow: 4px 4px 15px white;
+    font-family: sans-serif;
+    font-size: 5rem;
+    font-style: italic;
+  }
